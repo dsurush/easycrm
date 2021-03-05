@@ -1,0 +1,15 @@
+{
+  "app" : {
+    "serverName": "localhost",
+    "portRun": 8888,
+    "logFile": ""
+  },
+
+  "ccdDb" : {
+    "server": "127.0.0.1",
+    "port": 5432,
+    "user": "mydbuser",
+    "password": "123456789",
+    "database": "mydbtest"
+  }
+}
