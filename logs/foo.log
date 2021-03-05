@@ -13,3 +13,30 @@
 2021/03/05 19:18:01 CONNECTION TO DB IS SUCCESS
 2021/03/05 19:18:08 CONNECTION TO DB IS SUCCESS
 2021/03/05 19:18:09 Can't add to db admins.go/43 &{%!e(string=ОШИБКА) %!e(string=23505) %!e(string=повторяющееся значение ключа нарушает ограничение уникальности "users_username_key") %!e(string=Ключ "(username)=(surush)" уже существует.) %!e(string=) %!e(int32=0) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=public) %!e(string=users) %!e(string=) %!e(string=) %!e(string=users_username_key) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c) %!e(int32=656) %!e(string=_bt_check_unique)}
+2021/03/05 20:37:41 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:37:41 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:38:45 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:38:45 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:39:03 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:39:03 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:39:41 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:39:41 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:39:47 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:39:47 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:40:29 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:40:29 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:42:13 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:42:13 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:43:02 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:43:02 Can't scan &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "admins" не существует) %!e(string=) %!e(string=) %!e(int32=26) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 20:43:15 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:43:15 Can't scan &{%!e(string=ОШИБКА) %!e(string=42703) %!e(string=столбец "password" не существует) %!e(string=) %!e(string=) %!e(int32=12) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=3513) %!e(string=errorMissingColumn)}
+2021/03/05 20:43:33 CONNECTION TO DB IS SUCCESS
+2021/03/05 20:44:01 CONNECTION TO DB IS SUCCESS
+2021/03/05 21:02:42 CONNECTION TO DB IS SUCCESS
+2021/03/05 21:03:07 CONNECTION TO DB IS SUCCESS
+2021/03/05 21:03:22 CONNECTION TO DB IS SUCCESS
+2021/03/05 21:03:39 CONNECTION TO DB IS SUCCESS
+2021/03/05 21:13:01 CONNECTION TO DB IS SUCCESS
+2021/03/05 21:14:50 CONNECTION TO DB IS SUCCESS
+2021/03/05 21:15:31 CONNECTION TO DB IS SUCCESS

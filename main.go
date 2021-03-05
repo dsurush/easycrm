@@ -2,27 +2,25 @@ package main
 
 import (
 	"context"
+	"easycrm/cmd/app"
 	_ "easycrm/loginit"
-	"easycrm/models"
-	"fmt"
+	"easycrm/pkg/core/services"
+	"easycrm/token"
 	"github.com/jackc/pgx/pgxpool"
+	"github.com/julienschmidt/httprouter"
 	"log"
 )
 
 func main() {
-	fmt.Println("Hello I am new easyCRM-ADMIN")
+
 	pool, err := pgxpool.Connect(context.Background(), `postgres://dsurush:dsurush@localhost:5432/bbunique?sslmode=disable`)
-	if err != nil {
-		log.Printf("Owibka - %e", err)
-		log.Fatal("Can't Connection to DB")
-	} else {
-		log.Println("CONNECTION TO DB IS SUCCESS")
-	}
-	admin := models.Admin{
-		FirstName: "surush",
-		LastName:  "surush",
-		UserName:  "surush",
-		Password:  "surush",
-	}
-	admin.AddNew(pool)
+	if err != nil {log.Fatalf("Can't Connection to DB %e", err)}
+	log.Println("CONNECTION TO DB IS SUCCESS")
+
+	router := httprouter.New()
+	tokenSvc := token.NewTokenSvc([]byte("My Secret Key"), pool)
+	userSvc := services.NewUserSvc(pool)
+
+	server := app.NewMainServer(router, pool, userSvc, tokenSvc)
+	server.Start()
 }

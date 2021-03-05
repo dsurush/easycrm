@@ -2,7 +2,6 @@ package models
 
 import (
 	"context"
-	"fmt"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/pgxpool"
 	"golang.org/x/crypto/bcrypt"
