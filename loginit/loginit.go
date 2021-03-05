@@ -10,11 +10,12 @@ func init(){
 	//	fmt.Println("DO")
 	log.SetOutput(&lumberjack.Logger{
 		//Filename:   "/home/ccs/logs/ccslogs.log",
-		Filename:   "C:/Users/Professional/go/src/easycrm/foo.log",
+		Filename:   "C:/Users/User/go/src/easycrm/logs/foo.log",
+		//Filename:   "C:/Users/User/go/src/easycrm",
 		MaxSize:    20, // megabytes
 		MaxBackups: 5,
 		MaxAge:     60, //days
 		Compress:   true, // disabled by default
 	})
-	//	fmt.Println("DID")
+		//fmt.Println("DID")
 }

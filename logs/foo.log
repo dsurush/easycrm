@@ -1,0 +1,15 @@
+2021/03/05 19:07:33 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:07:34 Can't add to db admins.go/43 &{%!e(string=ОШИБКА) %!e(string=42P01) %!e(string=отношение "users" не существует) %!e(string=) %!e(string=) %!e(int32=13) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\parse_relation.c) %!e(int32=1379) %!e(string=parserOpenTable)}
+2021/03/05 19:10:38 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:10:39 Can't add to db admins.go/43 %!e(*xerrors.noWrapError)
+2021/03/05 19:11:51 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:11:52 Can't add to db admins.go/43 &{%!e(string=ОШИБКА) %!e(string=42601) %!e(string=INSERT содержит больше целевых столбцов, чем выражений) %!e(string=) %!e(string=) %!e(int32=58) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\parser\analyze.c) %!e(int32=929) %!e(string=transformInsertRow)}
+2021/03/05 19:12:30 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:12:31 Can't add to db admins.go/43 &{%!e(string=ОШИБКА) %!e(string=22P02) %!e(string=неверный синтаксис для типа integer: "a3446944-2cae-478c-9d69-2ae6e1d18b8b") %!e(string=) %!e(string=) %!e(int32=0) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\utils\adt\numutils.c) %!e(int32=323) %!e(string=pg_strtoint32)}
+2021/03/05 19:13:27 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:13:28 Can't add to db admins.go/43 &{%!e(string=ОШИБКА) %!e(string=22P02) %!e(string=неверный синтаксис для типа integer: "2a9186b6-eb52-4975-8164-81d221b236b7") %!e(string=) %!e(string=) %!e(int32=0) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\utils\adt\numutils.c) %!e(int32=323) %!e(string=pg_strtoint32)}
+2021/03/05 19:14:47 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:16:58 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:18:01 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:18:08 CONNECTION TO DB IS SUCCESS
+2021/03/05 19:18:09 Can't add to db admins.go/43 &{%!e(string=ОШИБКА) %!e(string=23505) %!e(string=повторяющееся значение ключа нарушает ограничение уникальности "users_username_key") %!e(string=Ключ "(username)=(surush)" уже существует.) %!e(string=) %!e(int32=0) %!e(int32=0) %!e(string=) %!e(string=) %!e(string=public) %!e(string=users) %!e(string=) %!e(string=) %!e(string=users_username_key) %!e(string=d:\pginstaller_13.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c) %!e(int32=656) %!e(string=_bt_check_unique)}
