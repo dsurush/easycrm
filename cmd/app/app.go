@@ -14,10 +14,11 @@ type MainServer struct {
 	pool *pgxpool.Pool
 	svc *services.UserSvc
 	tokenSvc *token.TokenSvc
+	CustomerSvc *services.CustomersSvc
 }
 
-func NewMainServer(router *httprouter.Router, pool *pgxpool.Pool, svc *services.UserSvc, tokenSvc *token.TokenSvc) *MainServer {
-	return &MainServer{router: router, pool: pool, svc: svc, tokenSvc: tokenSvc}
+func NewMainServer(router *httprouter.Router, pool *pgxpool.Pool, svc *services.UserSvc, tokenSvc *token.TokenSvc, customerSvc *services.CustomersSvc) *MainServer {
+	return &MainServer{router: router, pool: pool, svc: svc, tokenSvc: tokenSvc, CustomerSvc: customerSvc}
 }
 
 func (server *MainServer) Start() {

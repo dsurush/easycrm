@@ -20,7 +20,7 @@ func main() {
 	router := httprouter.New()
 	tokenSvc := token.NewTokenSvc([]byte("My Secret Key"), pool)
 	userSvc := services.NewUserSvc(pool)
-
-	server := app.NewMainServer(router, pool, userSvc, tokenSvc)
+	customersSvc := services.NewCustomersSvc(pool)
+	server := app.NewMainServer(router, pool, userSvc, tokenSvc, customersSvc)
 	server.Start()
 }
