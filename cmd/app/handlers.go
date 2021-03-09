@@ -88,3 +88,33 @@ func (server *MainServer) GetAllCustomersHandler(writer http.ResponseWriter, req
 		log.Println(err)
 	}
 }
+
+func (server *MainServer) UpdateCustomerHandler(writer http.ResponseWriter, request *http.Request, _ httprouter.Params) {
+	writer.Header().Set("Content-Type", "application/json; charset=utf-8")
+	var requestBody models.Customer
+	err := json.NewDecoder(request.Body).Decode(&requestBody)
+	if err != nil {
+		writer.WriteHeader(http.StatusBadRequest)
+		err := json.NewEncoder(writer).Encode([]string{"err.json_invalid"})
+		if err != nil {
+			log.Println(err)
+		}
+		return
+	}
+
+	err = server.CustomerSvc.UpdateCustomer(requestBody)
+	if err != nil {
+		writer.WriteHeader(http.StatusBadRequest)
+		err := json.NewEncoder(writer).Encode([]string{"can't update new Customer", err.Error()})
+		if err != nil {
+			log.Println(err)
+		}
+		return
+	}
+
+	response := requestBody
+	err = json.NewEncoder(writer).Encode(&response)
+	if err != nil {
+		log.Println(err)
+	}
+}

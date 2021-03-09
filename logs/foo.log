@@ -45,3 +45,13 @@
 2021/03/08 18:41:08 CONNECTION TO DB IS SUCCESS
 2021/03/08 18:41:09 can't add edit User StateDML =  ОШИБКА: столбец "update_at" в таблице "customers" не существует (SQLSTATE 42703)
 2021/03/08 18:41:48 CONNECTION TO DB IS SUCCESS
+2021/03/09 18:19:46 CONNECTION TO DB IS SUCCESS
+2021/03/09 18:19:46 can't add edit User StateDML =  ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "customers_name_key" (SQLSTATE 23505)
+2021/03/09 18:20:10 CONNECTION TO DB IS SUCCESS
+2021/03/09 18:50:31 can't add edit User StateDML =  ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "customers_pkey" (SQLSTATE 23505)
+2021/03/09 18:51:56 can't add edit User StateDML =  ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "customers_pkey" (SQLSTATE 23505)
+2021/03/09 18:52:41 can't add edit User StateDML =  ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "customers_pkey" (SQLSTATE 23505)
+2021/03/09 19:00:24 can't add edit User StateDML =  ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "customers_pkey" (SQLSTATE 23505)
+2021/03/09 19:01:32 CONNECTION TO DB IS SUCCESS
+2021/03/09 19:01:37 can't add edit User StateDML =  ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "customers_name_key" (SQLSTATE 23505)
+2021/03/09 19:02:14 can't add edit User StateDML =  ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "customers_name_key" (SQLSTATE 23505)
