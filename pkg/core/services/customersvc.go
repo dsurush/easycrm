@@ -15,7 +15,7 @@ func NewCustomersSvc(pool *pgxpool.Pool) *CustomersSvc {
 	return &CustomersSvc{pool: pool}
 }
 
-func (receiver *CustomersSvc) Add(customer models.Customer) (err error) {
+func (receiver *CustomersSvc) AddNewCustomer(customer models.Customer) (err error) {
 	conn, err := receiver.pool.Acquire(context.Background())
 	if err != nil {
 		log.Println("can't get connection", err)
@@ -39,5 +39,22 @@ func (receiver *CustomersSvc) Add(customer models.Customer) (err error) {
 		log.Println("can't add edit User StateDML = ", err)
 		return
 	}
+	return
+}
+
+func (receiver *CustomersSvc) GetAllCustomers() (customers []models.Customer, err error){
+	conn, err := receiver.pool.Acquire(context.Background())
+	if err != nil {
+		log.Println("can't get connection", err)
+		return
+	}
+	defer conn.Release()
+
+	rows, err := conn.Query(context.Background(), `SELECT id, name, tin, address, ceo, enabled, removed_at, created_at, updated_at, balance FROM public.customers`)
+	if err != nil {
+		log.Printf("can't read user rows %e", err)
+		return
+	}
+	defer rows.Close()
 	return
 }

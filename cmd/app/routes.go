@@ -15,7 +15,7 @@ func (server *MainServer) InitRoutes(){
 	server.router.POST("/api/login", server.LoginHandler)
 
 //	server.router.POST("/api/customers", server.LoginHandler)
-	//server.router.POST("/api/customers/add", server.LoginHandler)
+	server.router.POST("/api/customers/add", server.AddCustomerHandler)
 
 
 	log.Println(http.ListenAndServe(":8888", server))
@@ -34,7 +34,7 @@ func test(server *MainServer){
 		Balance:   0,
 	}
 	a.ID = uuid.New()
-	err := server.CustomerSvc.Add(a)
+	err := server.CustomerSvc.AddNewCustomer(a)
 	if err != nil {
 		fmt.Println("err ", err)
 		return
