@@ -56,5 +56,27 @@ func (receiver *CustomersSvc) GetAllCustomers() (customers []models.Customer, er
 		return
 	}
 	defer rows.Close()
+
+	for rows.Next() {
+		Customer := models.Customer{}
+		err := rows.Scan(
+			&Customer.ID,
+			&Customer.Name,
+			&Customer.Tin,
+			&Customer.Address,
+			&Customer.CEO,
+
+			&Customer.Enabled,
+			&Customer.RemovedAt,
+			&Customer.CreateAt,
+			&Customer.UpdateAt,
+			&Customer.Balance,
+			)
+		if err != nil {
+			log.Println("can't scan err is = ", err)
+			continue
+		}
+		customers = append(customers, Customer)
+	}
 	return
 }
