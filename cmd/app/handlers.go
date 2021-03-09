@@ -68,3 +68,23 @@ func (server *MainServer) AddCustomerHandler(writer http.ResponseWriter, request
 		log.Println(err)
 	}
 }
+
+func (server *MainServer) GetAllCustomersHandler(writer http.ResponseWriter, request *http.Request, _ httprouter.Params) {
+	writer.Header().Set("Content-Type", "application/json; charset=utf-8")
+
+	customers, err := server.CustomerSvc.GetAllCustomers()
+	if err != nil {
+		writer.WriteHeader(http.StatusBadRequest)
+		err := json.NewEncoder(writer).Encode([]string{"can't get all Customers", err.Error()})
+		if err != nil {
+			log.Println(err)
+		}
+		return
+	}
+
+	response := customers
+	err = json.NewEncoder(writer).Encode(&response)
+	if err != nil {
+		log.Println(err)
+	}
+}

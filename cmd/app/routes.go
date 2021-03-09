@@ -12,10 +12,12 @@ import (
 func (server *MainServer) InitRoutes(){
 	fmt.Println("Init routes")
 	test(server)
+	//ЛОГИН
 	server.router.POST("/api/login", server.LoginHandler)
 
-//	server.router.POST("/api/customers", server.LoginHandler)
+	//КЛИЕНТЫ
 	server.router.POST("/api/customers/add", server.AddCustomerHandler)
+	server.router.GET("/api/customers", server.GetAllCustomersHandler)
 
 
 	log.Println(http.ListenAndServe(":8888", server))
