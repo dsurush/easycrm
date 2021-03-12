@@ -1,6 +1,7 @@
 package app
 
 import (
+	"easycrm/middlewares/corss"
 	"easycrm/models"
 	"fmt"
 	"github.com/google/uuid"
@@ -13,12 +14,12 @@ func (server *MainServer) InitRoutes(){
 	fmt.Println("Init routes")
 	//test(server)
 	//ЛОГИН
-	server.router.POST("/api/login", server.LoginHandler)
+	server.router.POST("/api/login", corss.Middleware(server.LoginHandler))
 
 	//КЛИЕНТЫ
-	server.router.POST("/api/customers/add", server.AddCustomerHandler)
-	server.router.GET("/api/customers", server.GetAllCustomersHandler)
-	server.router.POST("/api/customers/update", server.UpdateCustomerHandler)
+	server.router.POST("/api/customers/add", corss.Middleware(server.AddCustomerHandler))
+	server.router.GET("/api/customers", corss.Middleware(server.GetAllCustomersHandler))
+	server.router.POST("/api/customers/update", corss.Middleware(server.UpdateCustomerHandler))
 
 
 	log.Println(http.ListenAndServe(":8888", server))
